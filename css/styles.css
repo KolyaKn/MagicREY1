@@ -1,0 +1,705 @@
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+/* Общие стили */
+.neucha-regular {
+  font-family: "Neucha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.orelega-one-regular {
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header{
+  Width: 100%;
+  Height: 1024px;
+  Top: 0px;
+  Left: 0px;
+}
+
+.header-img{
+  background-size: 1529px 1024px; /* Установка конкретной ширины и высоты для фонового изображения */
+  background-repeat: no-repeat; /* Требуется для предотвращения повтора изображения */
+  mix-blend-mode: multiply; /* Устанавливаем режим слоя */
+  height: 1024px; /* Установка высоты элемента */
+  position: relative; /* Установка позиционирования */
+  
+}
+
+
+/* Стили для основного текста */
+.body {
+  font-family: "open-Sans";
+  font-style: normal;
+  line-height: 1.2;
+  font-size: normal;
+  font-weight: normal;
+  color: black;
+}
+
+/* Обертка */
+.wrapper {
+  max-width: 1529px;
+  margin: 0 auto;
+}
+
+/* Стили для приветственного текста */
+.welcome-text {
+  top: 20px;
+  left: 622px;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: absolute;
+}
+
+/* Телефонный номер */
+.phone_text {
+  font-family: 'open-Sans';
+  color: #ffffff;
+  Width: 70px;
+  Height: 19px;
+  Top: 41px;
+  right: 35px;
+  position: absolute;
+  Font: 'Open Sans';
+  Font-weight: 400;
+  Font-size: 18px;
+  Line-Height: 19px;
+  Letter-spacing: 0%;
+  text-align: Right;
+}
+
+/* Изображение телефона */
+.image-container {
+  width: 25px;
+  height: 26px;
+  position: absolute;
+  top: 37px;
+  right: 105px;
+}
+
+/* Стили для блока с ссылками */
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Список ссылок */
+.header_list {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+/* Элемент списка */
+.header_item {
+  margin-right: 150px;
+}
+
+/* Последний элемент списка */
+.header_item:last-child {
+  max-width: 0;
+}
+
+/* Стили для ссылок */
+.header_link {
+  top: 110px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  text-decoration: none;
+  position: absolute;
+}
+
+/* Стили для ссылок при наведении */
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  opacity: 75%;
+  transition: color 0.5s; /* Плавное изменение цвета при наведении */
+  color:#000000 ; /* Новый цвет ссылки при наведении */
+}
+
+/* Стили для логотипа */
+.logo {
+  Width: 741px;
+  Height: 710px;
+  Top: 207px;
+  Left: 20px;
+  position: absolute;
+}
+
+/* Стили для эллипса */
+.ellipse {
+  Width: 825px;
+  Height: 726px;
+  Top: 207px;
+  Left: 0px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.018);
+}
+
+/* Стили для текста вдохновения */
+.TextInspire {
+  font-family: 'Neucha';
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 99px;
+  letter-spacing: 0;
+  text-align: right;
+  color: rgb(255, 255, 255);
+  width: 572px;
+  height: 198px;
+  top: 503px;
+  right: 19px;
+  position: absolute;
+}
+
+/* Стили для описания */
+.description {
+  text-align: right;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Open Sans';
+  width: 493px;
+  height: 81px;
+  top: 710px;
+  right: 24px;
+  position: absolute;
+  color: #ffffff;
+  letter-spacing: 20%;
+}
+
+/* Стили для кнопки */
+.button {
+  background-color: rgb(255, 203, 0);
+  box-shadow: 5px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  width: 544px;
+  height: 70px;
+  position: absolute;
+  top: 847px;
+  right: 19px;
+}
+
+/*Стиль для текста кнопки*/
+.text_OBORM {
+  font-family: 'open-Sans';
+  text-decoration: none;
+  width: 210px;
+  height: 34px;
+  font-size: 25px;
+  top: 867px;
+  right: 167px;
+  color: #ffffff;
+  position: absolute;
+  font-weight: medium
+}
+
+/*рамка номера*/
+.rectangle {
+  width: 118px; /* Ширина */
+  height: 50px; /* Высота */
+  top: 26px; /* Отступ сверху */
+  right: 20px; /* Отступ  */
+  position: absolute; /* Абсолютное позиционирование */
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25); /* Внешняя тень */
+  padding: 1px; /* Внутренний отступ */
+  background-clip: padding-box; /* Обрезка фона до внутреннего отступа */
+  inset: 0px 0px 4px 0 rgba(255, 255, 255, 0.85); /* Внутренняя тень */
+  border: 1px solid white; /* Белая рамка */
+}
+
+/* Стили для ссылки оформить заказ при наведении */
+.text_OBORM:hover,
+.text_OBORM:focus,
+.text_OBORM:active {
+  opacity: 75%;
+  transition: color 1s; /* Плавное изменение цвета при наведении */
+  color:#000000 ; /* Новый цвет ссылки при наведении */
+}
+/*888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.main{
+  width: 100%; /* Ширина основного блока */
+  background-color: #000000;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper-1 {
+ background-color: #ffffff;
+ width: 100%;
+ height: 360px;
+ padding: 20px;
+ font-family: 'open-Sans';
+}
+
+
+.img-vip-wrapper {
+  display: flex; /* Используем flexbox для контейнера */
+  justify-content: space-between; /* Равное распределение пространства между изображениями */
+}
+.img-vip-wrapper img{
+  width: 200px; /* Обратите внимание, что 'width' должно быть с маленькой буквы */
+  height: 200px; /* Обратите внимание, что 'height' должно быть с маленькой буквы */
+  margin-bottom: 20px; /* Расстояние между изображениями */
+}
+
+.spaced-image {
+  margin: 0 50px; /* Отступы слева и справа */
+}
+
+.text-vip-wrapper {
+  Font: 'Open-Sans';
+  display: flex;
+  Width: 100%;
+  Height: 35px;
+  font-size: 21px;
+}
+
+.spaced-text-vip-1 {
+  margin: 0 20px; /* Отступы слева и справа */
+}
+.spaced-text-vip-2 {
+  margin: 0 70px; /* Отступы слева и справа */
+}
+.spaced-text-vip-3 {
+  margin: 0 110px; /* Отступы слева и справа */
+}
+.spaced-text-vip-4 {
+  text-align: center;
+  margin: 0 0 0 95px;
+}
+
+.text-wrapper-vip{
+  font-family: 'open-Sans';
+  Font-weight: 400;
+  Font-size: 16px;
+  Line-Height: 20px;
+  Letter-spacing: 10%;
+  Height: 20px;
+  display: flex;
+  text-align: center; 
+}
+
+.text-wrapper-vip-1 {
+  margin: 0 40px; /* Отступы слева и справа */
+}
+.text-wrapper-vip-2 {
+  margin: 0 80px; /* Отступы слева и справа */
+}
+.text-wrapper-vip-3 {
+  margin: 0 0 0 90px; /* Отступы слева и справа */
+}
+.text-wrapper-vip-4 {
+  margin-left: 175px;
+  margin-top: 10px;
+} 
+
+.main-menu {
+  Width: 100%;
+  Height: 860px;
+  Top: 410px;
+}
+
+.menu-menu{
+  width: 100%;
+  Height: 60px;
+  Top: 0px;
+  background-color: rgba(0, 0, 0, 0.749);
+}
+
+.menu-text{
+  width: 111px;
+  height: 53px;
+  margin: auto; /* Центрируем блок по горизонтали */
+  text-align: center;
+  font: 'Playfair Display';
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 53px; /* Делаем line-height равным высоте блока */
+  letter-spacing: 0%;
+  color: #ffffff;
+  top: auto;
+}
+.img-and {
+  width: 100%;
+  overflow: hidden;
+  Top: 70px;
+  text-align: center;
+}
+
+.img-menu-1 {
+  width: 50%;
+  height: 400px;
+  margin-right: -4px; /* Скрываем правый margin для прижатия изображений */
+}
+
+.img-menu-2 {
+  width: 50%;
+  height: 400px;
+}
+
+.img-menu-3 {
+  Width: 100%;
+  Height: 400px;
+  Top: 70px;
+  Left: 40px;
+}
+
+.menu-text-katalog {
+  color: #ffffff;
+  font-family: 'Orelega One';
+  Font-weight: 400;
+  Font-size: 100px;
+  Line-Height: 109px;
+  text-align: Center;
+  display: flex;
+}
+
+.menu-text-katalog-1 {
+  Width: 325px;
+  Height: 109px;
+  Top: 1620px;
+  Left: 248px;
+  position: absolute;
+}
+
+.menu-text-katalog-2 {
+  Width: 369px;
+  Height: 109px;
+  Top: 1620px;
+  Left: 947px;
+  position: absolute;
+}
+
+.menu-text-katalog-3 {
+  Width: 756px;
+  Height: 109px;
+  Top: 2020px;
+  Left: 700px;
+  position: absolute;
+}
+
+.Reverse {
+  background: linear-gradient(to Left, rgb(238, 238, 238) 0%, rgb(143, 149, 154) 100%);
+  Width: 100%;
+  Height: 558px;
+}
+
+.Feedback-p{
+  font-family: 'Playfair Display';
+  Font-weight: 600;
+  Font-size: 40px;
+  Line-Height: 53px;
+  Letter-spacing: 1%;
+  text-align: Center;
+  Width: 362px;
+  Height: 55px;
+  Top: 2370px;
+  Left: 268px;
+  position: absolute;
+  color: rgb(241, 241, 241);
+}
+
+.Reverse-logo {
+  Width: 451.26px;
+  Height: 429.54px;
+  margin-top: 103px;
+  margin-left: 897px;
+}
+/*механика- связь через телефон соц сети*/
+.Feedback {
+  background-color: rgb(49, 49, 49);
+  Width: 272px;
+  Height: 430px;
+  top: 2460px;
+  right: 553px;
+  position: absolute;
+}
+/*автомат- связь через сайт*/
+.field {
+  background-color: rgb(249, 249, 249);
+  Width: 605px;
+  Height: 430px;
+  Top: 2460px;
+  right: 805px;
+  position: absolute;
+}
+.field-text {
+  font-family: 'Open-Sans';
+  Font-weight: 300;
+  Font-size: 20px;
+  Line-Height: 27px;
+  Letter-spacing: 1%;
+  text-align: left;
+  margin: 26px 25px;
+}
+.field-text-1 {
+  Width: 44px;
+  Height: 27px;
+  Top: 128px;
+  Left: 46px;
+}
+.field-text-2 {
+  Width: 55px;
+  Height: 27px;
+}
+.field-text-3 {
+  Width: 118px;
+  Height: 27px;
+  Top: 348px;
+  Left: 47px;
+}
+
+/*Галерея*/
+.gallery {
+  Width: 100%;
+  Height: 2100px;
+  Top: 1838px;
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  font-weight: 400;
+}
+.blox-text {
+  Width: 100%;
+  Height: 60px;
+  Top: 0px;
+  Left: 0px;
+  background-color:rgba(0, 0, 0, 0.749);;
+}
+.gallery-text {
+  Width: 390px;
+  Height: 53px;
+  Top: 17px;
+  Left: 499px;
+  Line-Height: 53px;
+  color: rgb(255, 255, 255);
+  margin: auto; /* Центрируем блок по горизонтали */
+  text-align: center;
+  top: 23px;
+}
+
+.gallery-photo {
+  Width: 100%;
+  Height: 2000px;
+  Top: 100px;
+  Left: 0px;
+  overflow: hidden;
+  padding: 0; /* Убираем внутренние отступы */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.gallery-photo-1 {
+  width: 569px; /* Ширина второй фото */
+  height: 585px; /* Высота второй фото */
+  top: 0; /* Отступ сверху для второй фото */
+  left: 0; /* Отступ слева для второй фото */
+  margin: 0 -10px;
+}
+.gallery-photo-2 {
+  width: 970px; /* Ширина четвертой фото */
+  height: 1139px; /* Высота четвертой фото */
+  top: 0; /* Отступ сверху для четвертой фото */
+  left: 468px; /* Отступ слева для четвертой фото */
+}
+
+.gallery-photo-3 {
+  width: 549px; /* Ширина третьей фото */
+  height: 555px; /* Высота третьей фото */
+  left: 0; /* Отступ слева для третьей фото */
+  top: 3486px;
+  position: absolute;
+}
+
+.gallery-photo-4 {
+  width: 983px; /* Ширина пятой фото */
+  height: 861px; /* Высота пятой фото */
+  top: 1139px; /* Отступ сверху для пятой фото */
+  left: 0; /* Отступ слева для пятой фото */
+}
+.gallery-photo-5 {
+  Width: 537px;
+  Height: 861px;
+  Top: 4041px;
+  Left: 983px;
+  position: absolute;
+}
+.magic-box {
+  Width: 100%;
+  Height: 450px;
+  top: 4900px;
+  background-color: rgb(241, 241, 241);
+  position: absolute;
+}
+.magic-p {
+  top: 30px;
+  left: 622px;
+  font-family: 'open-Sans';
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 53px;
+  letter-spacing: 0;
+  color: rgb(49, 49, 49);
+  text-align: center;
+  position: absolute;
+}
+.magic-text{
+  top: 125px;
+  font-family: 'open-Sans';
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: rgb(49, 49, 49);
+  text-align: center;
+  position: absolute;
+  margin: 0 122px;
+}
+.frame-for-text-1 {
+  Width: 17px;
+  Height: 30px;
+  Top: 355px;
+  Left: 20px;
+  background-color: rgb(49, 49, 49);
+  position: absolute;
+}
+.frame-for-text-0 {
+  Width: 17px;
+  Height: 30px;
+  Top: 355px;
+  right: 20px;
+  background-color: rgb(49, 49, 49);
+  position: absolute;
+}
+.frame-for-text-01 {
+  Width: 1479px;
+  Height: 25px;
+  Top: 385px;
+  right: 20px;
+  background-color: rgb(49, 49, 49);
+  position: absolute;
+}
+/*Подвал88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+.Basement-box {
+  top: 5350px;
+  Width: 100%;
+  Height: 530px;
+  background-color: rgb(46, 46, 46);
+  position: absolute;
+}
+.Basement-p-1 {
+  margin-top: 20px;
+  font-family: 'Open-Sans';
+  Font-weight: 600;
+  Font-size: 20px;
+  Line-Height: 27px;
+  text-align: center;
+  color:#ffffff;
+}
+.Basement-p-2 {
+  font-family: 'Open-Sans';
+  Font-weight: 500;
+  Font-size: 20px;
+  Line-Height: 27px;
+  text-align: center;
+  color:#ffffff;
+  margin-top: -30px;
+}
+.Basement_nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Размещаем по центру */
+  padding: 20px 0; /* Добавляем внутренний отступ сверху и снизу */
+}
+
+.Basement_list-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Выравниваем по центру */
+  padding: 40px 300px; /* Добавляем внутренний отступ сверху и снизу */
+}
+
+.Basement_list-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Располагаем по правому краю */
+  padding: 40px 0; /* Добавляем внутренний отступ сверху и снизу */
+}
+
+.Basement_item, .Basement_item-2, .Basement_list-0 {
+  margin-bottom: 20px; /* Добавляем отступ между элементами списка */
+}
+
+.Basement-a, .Basement-a-2, .Basement_list-0 {
+  font-family: "Open-Sans";
+  font-weight: 300, Thin;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #e1e1e1;
+  display: block;
+  text-align: center;
+  /* Добавляем красный цвет */
+}
+
+.Basement-a-2 {
+  color: #e1e1e1;
+  text-align: right; /* Выравниваем по правому краю */
+}
+.Basement_list-0 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Располагаем по правому краю */
+  padding: 40px 0; /* Добавляем внутренний отступ сверху и снизу */
+}
+.Description {
+  font-family: 'Open-Sans';
+  Font-weight: 300;
+  Font-size: 20px;
+  Line-Height: 20px;
+  text-align: left;
+  color:#e1e1e1;
+  text-align: center;
+  margin: 30px;
+}
+.end-CATERING {
+  font-family: 'Open-Sans';
+  Font-weight: 600;
+  Font-size: 20px;
+  Line-Height: 27px;
+  text-align: center;
+  color:#ffffff;
+}
+
